@@ -1,22 +1,18 @@
 import React from 'react';
 import './Contact.css';
-// Variables
-// let Contact = {
-//   name = 
-//   avatar = <img src="" />,
-//   online = true / false;
-//  isOnline = <p">{online ? 'online' : 'offline'}</p>,
-//  isOText = 
-//  }
-// declaration Contact.name ="X"
+function Contact(contact) {  
+    return(
+    <div className="Contact">
+        <p className="name">{contact.name}</p>
+        <img className= "avatar" src={contact.image} alt={contact.name}/>
+        <div className="status">
+            <div className={
+                contact.status === true ? "status-online" : "status-offline"}/>
+            <p className="status-text">{
+            contact.status === true ? "online" : "offline"}</p>
+        </div>  
 
-function Contact() {
-    return <div class="Contact"><img  class="avatar" src="https://randomuser.me/api/portraits/men/12.jpg" alt ="connard de lecteur d'écran"/>
-    <h3 class="name">Lucas Fernandez</h3>
-        <div class="status">
-            <div class="status-online"></div>
-            <p class="status-text">Online</p>
-        </div>
-    </div>
+    </div>);
 }
+
 export default Contact;
