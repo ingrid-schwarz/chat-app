@@ -14,5 +14,10 @@ function Contact(contact) {
 
     </div>);
 }
-
+Contact.propTypes={
+    name: PropTypes.string.isRequired,
+    status: PropTypes.bool.isRequired
+}
 export default Contact;
+
+
