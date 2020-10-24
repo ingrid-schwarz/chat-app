@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Contact from './components/Contact.jsx';
+import Contact from './components/ContactList.jsx';
 function App() {
   return (
     <div className="App">
